@@ -1,14 +1,9 @@
 # Read about factories at https://github.com/thoughtbot/factory_girl
 
 FactoryGirl.define do
-  factory :product do
-    category_id 1
+  factory :category do
     name "MyString"
-    hot false
     position 1
-    colour "MyString"
-    order_code "MyString"
-    type ""
-    content "MyText"
+    parent_id 1
   end
 end

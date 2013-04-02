@@ -2,6 +2,11 @@ Led::Application.routes.draw do
   root :to => "products#index"
 
   resources :products
+  resources :categories
+  resources :news
+  resources :contacts
+  resources :enquiries
+  resources :users
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

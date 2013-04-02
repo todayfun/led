@@ -11,15 +11,79 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130324142721) do
+ActiveRecord::Schema.define(:version => 20130402122233) do
 
-  create_table "products", :force => true do |t|
+  create_table "attachments", :force => true do |t|
+    t.integer  "container_id"
+    t.string   "container_type"
+    t.string   "filename"
+    t.string   "disk_filename"
+    t.integer  "filesize"
+    t.string   "content_type"
+    t.string   "digest"
+    t.integer  "downloads"
+    t.integer  "author_id"
+    t.datetime "created_on"
+    t.string   "description"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+  end
+
+  create_table "categories", :force => true do |t|
     t.string   "name"
-    t.string   "category"
-    t.integer  "price"
-    t.string   "note"
+    t.integer  "position"
+    t.integer  "parent_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+  end
+
+  create_table "contacts", :force => true do |t|
+    t.string   "name"
+    t.string   "email"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "enquiries", :force => true do |t|
+    t.integer  "user_id"
+    t.string   "products"
+    t.string   "status"
+    t.string   "user_name"
+    t.string   "user_email"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "news", :force => true do |t|
+    t.string   "title"
+    t.text     "content"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "products", :force => true do |t|
+    t.integer  "category_id"
+    t.string   "name"
+    t.boolean  "hot"
+    t.integer  "position"
+    t.string   "colour"
+    t.string   "order_code"
+    t.string   "type"
+    t.text     "content"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  create_table "users", :force => true do |t|
+    t.string   "name"
+    t.string   "email"
+    t.string   "phone"
+    t.string   "abn"
+    t.string   "skype"
+    t.string   "hashed_password"
+    t.string   "salt"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
   end
 
 end

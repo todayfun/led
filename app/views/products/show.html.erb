@@ -1,23 +1,43 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <b>Category:</b>
+  <%= @product.category.try :name %>
+</p>
+
+<p>
   <b>Name:</b>
   <%= @product.name %>
 </p>
 
 <p>
-  <b>Category:</b>
-  <%= @product.category %>
+  <b>Hot:</b>
+  <%= @product.hot %>
 </p>
 
 <p>
-  <b>Price:</b>
-  <%= @product.price %>
+  <b>Position:</b>
+  <%= @product.position %>
 </p>
 
 <p>
-  <b>Note:</b>
-  <%= @product.note %>
+  <b>Colour:</b>
+  <%= @product.colour %>
+</p>
+
+<p>
+  <b>Order code:</b>
+  <%= @product.order_code %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%= @product.type %>
+</p>
+
+<p>
+  <b>Content:</b>
+  <%= @product.content %>
 </p>
 
 
