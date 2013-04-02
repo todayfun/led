@@ -1,55 +1,55 @@
-# header
-logo + ¹«Ë¾Ãû
+ï»¿# header
+logo + å…¬å¸å
 
-# Ò»¼¶µ¼º½£¬ºá×ÅÅÅÁĞ
+# ä¸€çº§å¯¼èˆªï¼Œæ¨ªç€æ’åˆ—
 ## home
-* Ìá¹©²úÆ·ÁĞ±í
-Éè¼Æ²Î¿¼£ºhttp://www.crixled.ru/
+* æä¾›äº§å“åˆ—è¡¨
+è®¾è®¡å‚è€ƒï¼šhttp://www.crixled.ru/
 
-* ×ó²à£ºnews + ÓÒ²à£º¹«Ë¾¼ò½é 
+* å·¦ä¾§ï¼šnews + å³ä¾§ï¼šå…¬å¸ç®€ä»‹ 
 news: title + summary + linkto detail
-¹«Ë¾¼ò½é: Ò»¶Î»°
+å…¬å¸ç®€ä»‹: ä¸€æ®µè¯
 
-* ÁôÏÂÁªÏµ·½Ê½
+* ç•™ä¸‹è”ç³»æ–¹å¼
 name + email
 
-## ¹«Ë¾½éÉÜ
-Ò»¶ÎÎÄ×Ö
+## å…¬å¸ä»‹ç»
+ä¸€æ®µæ–‡å­—
 
-## ²úÆ·
-* ĞÂ²úÆ·ÁĞ±í
-Ã»Ñ¡ÔñÀàÄ¿µÄÊ±ºò£¬Ã¿¸öÒ»¼¶ÀàÄ¿ÏÔÊ¾Ò»¸ö´ú±íĞÔµÄ²úÆ·£»
-²Î¿¼£ºhttp://www.ledisong.com/en/
+## äº§å“
+* æ–°äº§å“åˆ—è¡¨
+æ²¡é€‰æ‹©ç±»ç›®çš„æ—¶å€™ï¼Œæ¯ä¸ªä¸€çº§ç±»ç›®æ˜¾ç¤ºä¸€ä¸ªä»£è¡¨æ€§çš„äº§å“ï¼›
+å‚è€ƒï¼šhttp://www.ledisong.com/en/
 
-* °´ÀàÄ¿µ¼º½
-×ó²à£ºÈı¼¶ÀàÄ¿£¬ÓÒ²à£ºÏÔÊ¾ÀàÄ¿ÏÂµÄ²úÆ·ÁĞ±í
-²Î¿¼£ºhttp://www.domuslighting.com/catalog/led
+* æŒ‰ç±»ç›®å¯¼èˆª
+å·¦ä¾§ï¼šä¸‰çº§ç±»ç›®ï¼Œå³ä¾§ï¼šæ˜¾ç¤ºç±»ç›®ä¸‹çš„äº§å“åˆ—è¡¨
+å‚è€ƒï¼šhttp://www.domuslighting.com/catalog/led
 
- * ²úÆ·ÏêÇé
-1. Í¼Æ¬ + datasheet + print + emailto
- ²Î¿¼: http://www.domuslighting.com/catalog/led/led-puk-range/p/products/power-puk-01-white-led
+ * äº§å“è¯¦æƒ…
+1. å›¾ç‰‡ + datasheet + print + emailto
+ å‚è€ƒ: http://www.domuslighting.com/catalog/led/led-puk-range/p/products/power-puk-01-white-led
  
-2. ·¢Ñ¯ÅÌ
+2. å‘è¯¢ç›˜
  http://www.domuslighting.com/wish-list
  
-## ĞÂÎÅ
-ĞÂÎÅÁĞ±í
-·¢²¼ĞÂÎÅ
+## æ–°é—»
+æ–°é—»åˆ—è¡¨
+å‘å¸ƒæ–°é—»
 
-## ÈÏÖ¤
-ÓĞË®Ó¡µÄÈÏÖ¤Í¼Æ¬ + ÎÄ±¾±à¼­
+## è®¤è¯
+æœ‰æ°´å°çš„è®¤è¯å›¾ç‰‡ + æ–‡æœ¬ç¼–è¾‘
 
 ## FAQ
-Ò»¸ö´óÎÄ±¾£¬²»ĞèÒªÍ¼Æ¬
+ä¸€ä¸ªå¤§æ–‡æœ¬ï¼Œä¸éœ€è¦å›¾ç‰‡
 
-## ÁªÏµ
+## è”ç³»
 
 # footer
-* Éç½»ÍøÂçÁªÏµ
+* ç¤¾äº¤ç½‘ç»œè”ç³»
 skype, msn, rss
-²Î¿¼£ºhttp://www.domuslighting.com/ µÄfooter
+å‚è€ƒï¼šhttp://www.domuslighting.com/ çš„footer
 
-* ÁªÏµ·½Ê½
+* è”ç³»æ–¹å¼
 email
-¹Ì¶¨µç»°
-ÊÖ»ú
+å›ºå®šç”µè¯
+æ‰‹æœº
