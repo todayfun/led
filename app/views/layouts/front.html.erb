@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Led</title>
+  <%= stylesheet_link_tag    "front", :media => "all" %>
+  <%= javascript_include_tag "front" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<ul class="nav">
+  <li><%= link_to_unless_current :categories, categories_path %></li>
+  <li><%= link_to_unless_current :products, products_path %></li>
+  <li><%= link_to_unless_current :users, users_path %></li>
+  <li><%= link_to_unless_current :news, news_index_path %></li>
+  <li><%= link_to_unless_current :enquiries, enquiries_path %></li>
+  <li><%= link_to_unless_current :contacts, contacts_path %></li>
+  <li><%= link_to_unless_current "公司简介", help_path(:about_company) %></li>
+  <li><%= link_to_unless_current "FQA", help_path(:about_faq) %></li>
+  <li><%= link_to_unless_current "联系方式", help_path(:about_contact) %></li>
+</ul>
+
+<%= yield %>
+
+</body>
+</html>

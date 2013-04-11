@@ -1,5 +1,5 @@
-class EnquiriesController < ApplicationController
-  layout "front"
+class Admin::EnquiriesController < ApplicationController
+  layout "admin"
 
   # GET /enquiries
   # GET /enquiries.json
@@ -46,7 +46,7 @@ class EnquiriesController < ApplicationController
 
     respond_to do |format|
       if @enquiry.save
-        format.html { redirect_to @enquiry, notice: 'Enquiry was successfully created.' }
+        format.html { redirect_to admin_enquiry_url(@enquiry), notice: 'Enquiry was successfully created.' }
         format.json { render json: @enquiry, status: :created, location: @enquiry }
       else
         format.html { render action: "new" }
@@ -62,7 +62,7 @@ class EnquiriesController < ApplicationController
 
     respond_to do |format|
       if @enquiry.update_attributes(params[:enquiry])
-        format.html { redirect_to @enquiry, notice: 'Enquiry was successfully updated.' }
+        format.html { redirect_to admin_enquiry_url(@enquiry), notice: 'Enquiry was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
@@ -78,7 +78,7 @@ class EnquiriesController < ApplicationController
     @enquiry.destroy
 
     respond_to do |format|
-      format.html { redirect_to enquiries_url }
+      format.html { redirect_to admin_enquiries_url }
       format.json { head :no_content }
     end
   end

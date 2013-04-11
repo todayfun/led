@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130402122233) do
+ActiveRecord::Schema.define(:version => 20130410131835) do
 
   create_table "attachments", :force => true do |t|
     t.integer  "container_id"
@@ -50,6 +50,13 @@ ActiveRecord::Schema.define(:version => 20130402122233) do
     t.string   "status"
     t.string   "user_name"
     t.string   "user_email"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "helps", :force => true do |t|
+    t.string   "name"
+    t.text     "content"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end

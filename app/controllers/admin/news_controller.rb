@@ -1,5 +1,5 @@
-class NewsController < ApplicationController
-  layout "front"
+class Admin::NewsController < ApplicationController
+  layout "admin"
 
   # GET /news
   # GET /news.json
@@ -46,7 +46,7 @@ class NewsController < ApplicationController
 
     respond_to do |format|
       if @news.save
-        format.html { redirect_to @news, notice: 'News was successfully created.' }
+        format.html { redirect_to admin_news(@news), notice: 'News was successfully created.' }
         format.json { render json: @news, status: :created, location: @news }
       else
         format.html { render action: "new" }
@@ -62,7 +62,7 @@ class NewsController < ApplicationController
 
     respond_to do |format|
       if @news.update_attributes(params[:news])
-        format.html { redirect_to @news, notice: 'News was successfully updated.' }
+        format.html { redirect_to admin_news(@news), notice: 'News was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
@@ -78,7 +78,7 @@ class NewsController < ApplicationController
     @news.destroy
 
     respond_to do |format|
-      format.html { redirect_to news_index_url }
+      format.html { redirect_to admin_news_index_url }
       format.json { head :no_content }
     end
   end

@@ -1,5 +1,6 @@
 Led::Application.routes.draw do
-  root :to => "products#index"
+  root :to => "front#home"
+  match 'front(/:action)', :controller => 'front'
 
   resources :products
   resources :categories
@@ -7,6 +8,19 @@ Led::Application.routes.draw do
   resources :contacts
   resources :enquiries
   resources :users
+  resources :helps
+
+  namespace :admin do
+    root :to=>"products#index"
+
+    resources :products
+    resources :categories
+    resources :news
+    resources :contacts
+    resources :enquiries
+    resources :users
+    resources :helps
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
